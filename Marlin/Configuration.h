@@ -483,10 +483,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  //CR-10S E3D V6 VIA PID AUTOTUNE M303 E0 S195 C8
-  #define DEFAULT_Kp 27.19
-  #define DEFAULT_Ki 2.58
-  #define DEFAULT_Kd 71.58
+  //CR-10S E3D V6 VIA PID AUTOTUNE M303 E0 S200 C8
+  #define DEFAULT_Kp 24.32
+  #define DEFAULT_Ki 2.13
+  #define DEFAULT_Kd 69.51
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -539,9 +539,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //KEENOVO Silicone Heater 220V 750W NTC 100K thermistor (Beta 25/50 3950K-1%) on CR-10S (M303 E-1 S60 C8)
-  #define DEFAULT_bedKp 40.74
-  #define DEFAULT_bedKi 7.74
-  #define DEFAULT_bedKd 143.01
+  #define DEFAULT_bedKp 33.95
+  #define DEFAULT_bedKi 4.64
+  #define DEFAULT_bedKd 165.63
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
@@ -740,7 +740,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.4, 79.5, 397, 409.4 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.4, 399.3, 409.4 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1466,7 +1466,7 @@
 #define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save PROGMEM.
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
-  //#define EEPROM_AUTO_INIT  // Init EEPROM automatically on any errors.
+  #define EEPROM_AUTO_INIT  // Init EEPROM automatically on any errors.
 #endif
 
 //
