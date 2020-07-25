@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //CR-10S E3D V6 VIA PID AUTOTUNE M303 E0 S210 C8 Ventilador al 100%
-  #define DEFAULT_Kp 23.82
-  #define DEFAULT_Ki 2.01
-  #define DEFAULT_Kd 70.74
+  #define DEFAULT_Kp 18.60
+  #define DEFAULT_Ki 1.15
+  #define DEFAULT_Kd 75.01
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -539,9 +539,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //KEENOVO Silicone Heater 220V 750W NTC 100K thermistor (Beta 25/50 3950K-1%) on CR-10S (M303 E-1 S50 C8)
-  #define DEFAULT_bedKp 22.64
-  #define DEFAULT_bedKi 2.32
-  #define DEFAULT_bedKd 146.97
+  #define DEFAULT_bedKp 50.93
+  #define DEFAULT_bedKi 8.40
+  #define DEFAULT_bedKd 205.79
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
