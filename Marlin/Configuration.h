@@ -740,14 +740,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.1, 80.5, 400, 416.4 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.1, 80.3, 398.6, 416.4 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 15, 25 }
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 20, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -760,7 +760,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
 // #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 } Valores antes de SKR 1.4 en CR10S versión 1.0.9
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
@@ -776,9 +776,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION           500    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
 //  Versión 2.0.1   #define DEFAULT_ACCELERATION           500    // X, Y, Z and E acceleration for printing moves
 //  con CR-10S      #define DEFAULT_RETRACT_ACCELERATION   500    // E acceleration for retracts
 //  sin SKR 1,4     #define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
@@ -793,9 +793,9 @@
  */
 //#define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK  8.0
-  #define DEFAULT_YJERK  8.0
-  #define DEFAULT_ZJERK  0.5
+  #define DEFAULT_XJERK  10.0
+  #define DEFAULT_YJERK  10.0
+  #define DEFAULT_ZJERK  0.3
 
   //#define TRAVEL_EXTRA_XYJERK 0.0     // Additional jerk allowance for all travel moves
 
