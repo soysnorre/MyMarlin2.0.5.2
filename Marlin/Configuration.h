@@ -740,7 +740,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.1, 80.4, 396.2, 414.8 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.6, 80.1, 399.4, 414.0 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1108,8 +1108,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 305  //como estaba en mi versión anterior en vez de 300
-#define Y_BED_SIZE 305 //como estaba en mi versión anterior en vez de 300
+#define X_BED_SIZE 300  //Anteriormente esta en 305
+#define Y_BED_SIZE 300  //Anteriormente esta en 305
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1162,7 +1162,7 @@
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define NUM_RUNOUT_SENSORS   1     // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_INVERTING true // Set to true to invert the logic of the sensor.
+  #define FIL_RUNOUT_INVERTING false // Set to true to invert the logic of the sensor.
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN      // Use internal pulldown for filament runout pins.
 
@@ -1493,7 +1493,7 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 195
+#define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
